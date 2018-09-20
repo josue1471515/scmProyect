@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/scmProyect.iml" filepath="$PROJECT_DIR$/scmProyect.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scmProyect_integrationTest.iml" filepath="$PROJECT_DIR$/.idea/modules/scmProyect_integrationTest.iml" group="scmProyect" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scmProyect_main.iml" filepath="$PROJECT_DIR$/.idea/modules/scmProyect_main.iml" group="scmProyect" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scmProyect_test.iml" filepath="$PROJECT_DIR$/.idea/modules/scmProyect_test.iml" group="scmProyect" />
+    </modules>
+  </component>
+</project>
