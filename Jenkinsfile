@@ -1,21 +1,10 @@
 pipeline {
   agent any
   stages {
-    stage('Commit') {
-      parallel {
-        stage('Pruebas unitarias') {
-          steps {
-            sh '''cd "C:\\Users\\PC\\Documents\\maestria\\scmProyect\\"
-'''
-            sh 'grails test-app'
-          }
-        }
-        stage('Compilar') {
-          steps {
-            sh 'cd "C:\\Users\\PC\\Documents\\maestria\\scmProyect"'
-            sh 'grails compile'
-          }
-        }
+    stage('Compilar') {
+      steps {
+        bat(script: 'cd C:\\Users\\PC\\Documents\\maestria\\scmProyect', returnStatus: true)
+        bat(script: 'grails test-app', returnStatus: true)
       }
     }
   }
