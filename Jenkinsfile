@@ -1,10 +1,10 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('Commit') {
       steps {
-        bat(returnStatus: true, script: 'cd C:\\Users\\PC\\Documents\\maestria\\scmProyect')
-        bat(script: 'grails test-app', returnStatus: true)
+        sh '''cd C:\\Users\\PC\\Documents\\maestria\\scmProyect
+grails test-app'''
       }
     }
   }
