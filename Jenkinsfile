@@ -5,7 +5,7 @@ pipeline {
       parallel {
         stage('Pruebas unitarias') {
           steps {
-            sh '''cd C:\\Users\\PC\\Documents\\maestria\\scmProyect
+            sh '''cd C:\\Users\\PC\\Documents\\maestria\\scmProyect\\
 grails test-app'''
           }
         }
