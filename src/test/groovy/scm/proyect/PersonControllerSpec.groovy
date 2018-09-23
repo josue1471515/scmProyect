@@ -6,6 +6,7 @@ import spock.lang.Specification
 class PersonControllerSpec extends Specification implements ControllerUnitTest<PersonController> {
 
     def setup() {
+
     }
 
     def cleanup() {

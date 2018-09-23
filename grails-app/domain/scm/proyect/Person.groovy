@@ -1,7 +1,5 @@
 package scm.proyect
-import grails.rest.*
 
-@Resource(uri='/person')
 class Person {
 
     String nombre

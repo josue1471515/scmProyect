@@ -10,7 +10,9 @@ class PersonController {
     def index() {
         respond Person.getAll()
     }
-
+    def algo(){
+        return false
+    }
     def create() {
         respond new Person(params)
     }
