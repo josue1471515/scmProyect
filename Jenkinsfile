@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('ssh') {
       steps {
-        bat 'vagrant box add --name orig "C:\\Users\\PC\\Desktop\\maestria\\scm\\scm.box"'
+        bat(script: 'vagrant box add --name orig "C:\\Users\\PC\\Desktop\\maestria\\scm\\scm.box" --force', returnStatus: true, returnStdout: true)
         bat 'vagrant up'
       }
     }
