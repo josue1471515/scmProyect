@@ -22,7 +22,7 @@ class PersonServiceSpec extends Specification implements ServiceUnitTest<PersonS
         boolean EsMayor = personService.adultPerson(Date.parse("yyyy-MM-dd", "1992-04-03"), 18)
         expect: "Mayor de 18"
 
-        EsMayor == false
+        EsMayor == true
 
     }
 
