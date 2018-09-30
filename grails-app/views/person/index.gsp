@@ -19,7 +19,7 @@
                 <div class="message" role="status">${flash.message}</div>
             </g:if>
             <f:table collection="${personList}" />
-            <span> <p>este es uncambio 9999</p> </span>
+            <span> <p>este es uncambio 1010</p> </span>
             <div class="pagination">
                 <g:paginate total="${personCount ?: 0}" />
             </div>
