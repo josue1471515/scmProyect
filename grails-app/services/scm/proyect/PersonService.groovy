@@ -5,33 +5,23 @@ import groovy.time.TimeCategory
 import groovy.time.TimeDuration
 
 import javax.xml.bind.ValidationException
-
-
+@Transactional
 class PersonService {
 
     def serviceMethod(def asd) {
         return true;
     }
 
-    def adultPerson(Date date, int limitYears) {
 
-        Date dateNow = new Date()
-        TimeDuration tiempo = TimeCategory.minus(dateNow ,date )
-        int years = tiempo.days / 365
-        if (years > limitYears) {
-            return true
-        } else {
-            return false
-        }
-
-    }
 
     def savePerson(Person pPerson) {
-        if (adultPerson(pPerson.fechaDeNacimiento, 18)) {
-            pPerson.save()
+        PersonProcessService process = new PersonProcessService()
+        if (process.adultPerson(pPerson.fechaDeNacimiento, 18)) {
+           return pPerson.save()
         } else {
             throw new ValidationException("No es mayor de edad")
         }
+
     }
 
     def showPerson(Long pId) {

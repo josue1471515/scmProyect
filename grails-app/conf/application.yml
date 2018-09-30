@@ -104,7 +104,7 @@ dataSource:
 environments:
     development:
         dataSource:
-            dbCreate: update
+            dbCreate: create-drop
             url: jdbc:postgresql://172.31.1.15:5432/scm_proyect
     test:
         dataSource:
