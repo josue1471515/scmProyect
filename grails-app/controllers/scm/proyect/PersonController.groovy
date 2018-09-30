@@ -28,7 +28,7 @@ class PersonController {
         }
 
         try {
-            pPerson = gPersonService.savePerson(pPerson)
+            pPerson = gPersonService.savePergrason(pPerson)
         } catch (ValidationException e) {
 
             respond pPerson.errors, view: 'create'
