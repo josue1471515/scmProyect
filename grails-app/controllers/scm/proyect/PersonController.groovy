@@ -13,6 +13,9 @@ class PersonController {
     def algo2(){
         return false
     }
+    def algo3(){
+        return false
+    }
     def algo(){
         return false
     }
