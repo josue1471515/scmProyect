@@ -105,7 +105,7 @@ environments:
     development:
         dataSource:
             dbCreate: create-drop
-            url: jdbc:postgresql://172.31.1.15:5432/scm_proyect
+            url: jdbc:postgresql://192.168.43.151:5432/scm_proyect
     test:
         dataSource:
             dbCreate: update
@@ -113,7 +113,7 @@ environments:
     production:
         dataSource:
             dbCreate: update
-            url: jdbc:postgresql://172.31.1.15:5432/scm_proyect
+            url: jdbc:postgresql://192.168.43.151:5432/scm_proyect
             properties:
                 jmxEnabled: true
                 initialSize: 5
