@@ -19,7 +19,7 @@ class PersonServiceSpec extends Specification implements ServiceUnitTest<PersonS
 
         given: "se pasa el servicio"
             PersonProcessService personService = new PersonProcessService()
-            boolean EsMayor = personService.adultPerson(Date.parse("yyyy-MM-dd", "1992-04-03"), 18)
+            boolean EsMayor = personService.adultPerson(Date.parse("yyyy-MM-dd", "2016-04-03"), 18)
         expect: "Mayor de 18"
 
             EsMayor == true
