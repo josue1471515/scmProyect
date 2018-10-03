@@ -14,6 +14,10 @@ class PersonController {
     def algo(){
         return false
     }
+    
+    def algo222(){
+        return false
+    }
     def create() {
         respond new Person(params)
     }
