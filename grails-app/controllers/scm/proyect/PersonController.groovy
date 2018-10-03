@@ -11,17 +11,8 @@ class PersonController {
         respond Person.getAll()
     }
 
-    def algo(){
-        return false
-    }
-    
-    def algo333(){
-        return false
-    }
-    
-    def algo444(){
-        return false
-    }
+   
+   
     def create() {
         respond new Person(params)
     }
