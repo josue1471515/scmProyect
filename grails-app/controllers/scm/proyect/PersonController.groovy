@@ -15,7 +15,7 @@ class PersonController {
         return false
     }
     
-    def algo222(){
+    def algo333(){
         return false
     }
     def create() {
